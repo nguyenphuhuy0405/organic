@@ -471,7 +471,9 @@
 /* Sale */
 .sales{
     margin-top: 50px;
-    background-image: url(/assets/img/slider-07.jpg);
+    /* background-image: url(/assets/img/slider-07.jpg); */
+    background-image: url(../img/slider-07.jpg);
+    
 }
 .sales__content{
     text-align: center;
