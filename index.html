@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <div class="grid">
+        <div class="row no-gutters">
+            <div class="col l-12 m-12 c-12">
+                <header class="header">
+
+                    
+                    <label for="mobile-navbar-input" class="mobile-navbar__menu">
+                        <div class="mobile-navbar__menu-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </label>
+                    <input type="checkbox" name="" id="mobile-navbar-input" class="mobile-navbar-input" hidden>
+                    <label for="mobile-navbar-input" class="mobile-navbar__overlay"></label>
+                    <div class="mobile-navbar">
+                        <ul class="mobile-navbar__list">
+                            <label for="mobile-navbar-input" class="mobile-navbar__list-exit">
+                                <div class="mobile-navbar__list-exit-icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </label>
+                            <li class="mobile-navbar__item">
+                                <a href="" class="mobile-navbar__item-link">Trang chủ</a>
+                            </li>
+                            <li class="mobile-navbar__item">
+                                <a href="" class="mobile-navbar__item-link">Giới thiệu</a>
+                            </li>
+                            <li class="mobile-navbar__item mobile-navbar__dropdown">
+                                <a href="" class="mobile-navbar__item-link">
+                                    <label for="mobile-select-input-checkbox" class="mobile-select-input">
+                                        <div class="mobile-select-label">
+                                            Cửa hàng
+                                        </div>
+                                        
+                                        <div class="mobile-select-icon">
+                                            <i class="fa-solid fa-chevron-down"></i>                                            
+                                        </div>
+                                    </label>
+                                </a>
+                                <input type="checkbox" name="" id="mobile-select-input-checkbox" class="mobile-select-input-checkbox" hidden>
+                                <ul class="mobile-navbar__dropdown-list">
+                                    <li class="mobile-navbar__dropdown-item">
+                                        <a href="" class="mobile-navbar__dropdown-item-link">Rau củ</a>
+                                    </li>
+                                    <li class="mobile-navbar__dropdown-item">
+                                        <a href="" class="mobile-navbar__dropdown-item-link">Hải sản</a>
+                                    </li>
+                                    <li class="mobile-navbar__dropdown-item">
+                                        <a href="" class="mobile-navbar__dropdown-item-link">Trái cây</a>
+                                    </li>
+                                    <li class="mobile-navbar__dropdown-item">
+                                        <a href="" class="mobile-navbar__dropdown-item-link">Đồ uống</a>
+                                    </li>
+                                    <li class="mobile-navbar__dropdown-item">
+                                        <a href="" class="mobile-navbar__dropdown-item-link">Đồ khô</a>
+                                    </li>
+                                    <li class="mobile-navbar__dropdown-item">
+                                        <a href="" class="mobile-navbar__dropdown-item-link">Thịt trứng</a>
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li class="mobile-navbar__item">
+                                <a href="" class="mobile-navbar__item-link">Danh bạ nhà hàng</a>
+                            </li>
+                            <li class="mobile-navbar__item">
+                                <a href="" class="mobile-navbar__item-link">Kiến thức</a>
+                            </li>
+                            <li class="mobile-navbar__item">
+                                <a href="" class="mobile-navbar__item-link">Liên hệ</a>
+                            </li>
+                            <li class="mobile-navbar__item">
+                                <a href="" class="mobile-navbar__item-link">Góc chia sẻ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__logo">
+                        <a class="header__logo-link">
+                            <img src="./assets/img/mona-white.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+            
+                    <ul class="header__navbar-list hide-on-mobile-tablet">
+                        <li class="header__navbar-item header__navbar-item--active">
+                            <a href="" class="header__navbar-link">Trang chủ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">Giới thiệu</a>
+                        </li>
+                        <li class="header__navbar-item dropdown">
+                            <a href="" class="header__navbar-link">
+                                <div class="select-input">
+                                    <div class="select-label">
+                                        Cửa hàng
+                                    </div>
+                                    <div class="select-icon">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="dropdown-list">
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Rau củ</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Hải sản</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Trái cây</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Đồ uống</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Đồ khô</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="" class="dropdown-link">Thịt trứng</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">Danh bạ nhà nông</a>     
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">Kiến thức</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">Liên hệ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">Góc chia sẻ</a>
+                        </li>
+                    </ul>
+
+                    <!-- Header search -->
+                    <div class="header__search hide-on-mobile-tablet ">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm...">
+                        <div class="header__search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <!-- Mobile header search -->
+                    <label for="mobile-search-input" class="mobile-search">
+                        <div class="mobile-search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </label>
+                    <input type="checkbox" name="" id="mobile-search-input" class="mobile-search-input-checkbox" hidden>
+                    <input type="text" class="mobile-search-input" placeholder="Tìm kiếm...">
+                    
+                    
+                </header>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+    
+    <!-- Container -->
+    <container class="container">
+            <!-- Banner -->
+            <div class="grid">
+                <div class="row no-gutters">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="banner">
+                            <img src="./assets/img/slide-img2.jpg" alt="Ảnh banner" class="banner-img">
+                            <div class="banner__content">
+                                <h2 class="banner__content-heading">
+                                    Giao tận tay người dùng nhanh
+                                </h2>
+                                <h1 class="banner__content-title">
+                                    Thực phẩm Organic
+                                </h1>
+                                <h3 class="banner__content-desc">Chúng tôi cung cấp các sản phẩm hữu cơ chất lượng cao</h3>
+                                <button class="banner__content-btn btn btn--second">
+                                    Mua Ngay
+                                    <div class="banner__content-btn-icon">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- End Banner -->
+            
+            <!-- Category -->
+            <div class="grid wide category">
+                <div class="row no-gutters">
+                    <!-- Category item -->
+                    <div class="col l-2 m-2 c-6">
+                        <div class="category__item">
+                            <a href="" class="category__item-link">
+                                <img src="./assets/img/p11-100x100-1.jpg" alt="Ảnh sản phẩm" class="category__item-img">
+                                <p class="category__item-name">Dâu tây</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <div class="category__item">
+                            <a href="" class="category__item-link">
+                                <img src="./assets/img/4-zalm-loin-white-100x100.png" alt="Ảnh sản phẩm" class="category__item-img">
+                                <p class="category__item-name">Hải sản</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <div class="category__item">
+                            <a href="" class="category__item-link">
+                                <img src="./assets/img/p12-100x100-1.jpg" alt="Ảnh sản phẩm" class="category__item-img">
+                                <p class="category__item-name">Đồ uống</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <div class="category__item">
+                            <a href="" class="category__item-link">
+                                <img src="./assets/img/p9-100x100-1.jpg" alt="Ảnh sản phẩm" class="category__item-img">
+                                <p class="category__item-name">Rau củ</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <div class="category__item">
+                            <a href="" class="category__item-link">
+                                <img src="./assets/img/p8-100x100.jpg" alt="Ảnh sản phẩm" class="category__item-img">
+                                <p class="category__item-name">Đồ khô</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <div class="category__item">
+                            <a href="" class="category__item-link">
+                                <img src="./assets/img/p2-100x100-1.jpg" alt="Ảnh sản phẩm" class="category__item-img">
+                                <p class="category__item-name">Thịt trứng</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- End Category -->
+
+            <!-- SM-Banner -->
+            <div class="grid wide sm-banner">
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <a class="sm-banner__link">
+                            <img src="./assets/img/banner-img2.png" alt="Ảnh banner1" class="sm-banner__item-img">
+                        </a>
+                    </div>
+                    <div class="col l-6 m-6 c-12">
+                        <a class="sm-banner__link">
+                            <img src="./assets/img/banner-img1.png" alt="Ảnh banner2" class="sm-banner__item-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End SM-Banner -->
+
+            <!-- Product -->
+            <div class="grid wide product">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <h1 class="product__title">Sản phẩm bán chạy</h1>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <div class="product__item">
+                            <a href="" class="product__item-link">
+                                <div class="product__item-img-wrapper">
+                                    <img src="./assets/img/p5.jpg" alt="Ảnh sản phẩm" class="product__item-img">
+
+                                </div>
+                                <div class="product__item-info">
+                                <div class="product__item-name">Bắp Cải</div>
+                                <div class="product__item-price">65.000 đ</div>
+                                </div>
+                            </a>
+                            <div class="product__item-btn btn btn--second">Mua</div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <div class="product__item">
+                            <a href="" class="product__item-link">
+                                <div class="product__item-img-wrapper">
+                                    <img src="./assets/img/p2.jpg" alt="Ảnh sản phẩm" class="product__item-img">
+                                    
+                                </div>
+                                <div class="product__item-info">
+                                    <div class="product__item-name">Bắp Mỹ</div>
+                                    <div class="product__item-price">75.000 đ</div>
+                                </div>  
+                            </a>
+                            <div class="product__item-btn btn btn--second">Mua</div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <div class="product__item">
+                            <a href="" class="product__item-link">
+                                <div class="product__item-img-wrapper">
+                                    <img src="./assets/img/p6.jpg" alt="Ảnh sản phẩm" class="product__item-img">
+                                    
+                                </div>
+                                <div class="product__item-info">
+                                    <div class="product__item-name">Chuối Organic</div>
+                                    <div class="product__item-price">35.000 đ</div>
+                                </div>           
+                            </a>
+                            <div class="product__item-btn btn btn--second">Mua</div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-6">
+                        <div class="product__item">
+                            <a href="" class="product__item-link">
+                                <div class="product__item-img-wrapper">
+                                    <img src="./assets/img/p3.jpg" alt="Ảnh sản phẩm" class="product__item-img">
+                                </div>
+                                <div class="product__item-info">
+                                    <div class="product__item-name">Cà Chua</div>
+                                    <div class="product__item-price">75.000 đ</div>
+                                </div>
+                            </a>
+                            <div class="product__item-btn btn btn--second">Mua</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Product -->
+
+            <!-- Sales -->
+            <div class="grid sales">
+                <div class="row no-gutters">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="sales__content">
+                            <h2 class="sales__content-heading">Cơ hội săn được giá tối cuối tuần</h2>
+                            <h1 class="sales__content-title">Đang khuyết mãi</h1>
+                            <h3 class="sales__content-desc">Từ trang trại của chúng tôi ngay trước cửa nhà bạn.</h3>
+                        </div>
+                        <div class="grid wide sales__list">
+                            
+                            <div class="row ">
+                                <!-- Sales clock -->
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="sales__clock">
+                                        <div class="sales__clock-btn">
+                                            <div class="sales__clock-btn-num">0</div>
+                                            <div class="sales__clock-btn-time">Giờ</div>
+                                        </div>
+                                        <div class="sales__clock-btn">
+                                            <div class="sales__clock-btn-num">0</div>
+                                            <div class="sales__clock-btn-time">Phút</div>
+                                        </div>
+                                        <div class="sales__clock-btn">
+                                            <div class="sales__clock-btn-num">0</div>
+                                            <div class="sales__clock-btn-time">Giây</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="sales__list-item">
+                                <div class="row">
+                                    <!-- Sales items -->
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="sales__item">
+                                            <a href="" class="sales__item-link">
+                                                <div class="sales__item-img-wrapper">
+                                                    <img src="./assets/img/upload_021f1d5bfb6043009170a1f950ecea5a_master.jpg" alt="Ảnh sản phẩm" class="sales__item-img">
+                                                </div>
+                                                <div class="sales__item-info">
+                                                    <div class="sales__item-name">Xoài cát Hòa Lộc Global GAP loại đặc biệt</div>
+                                                    <div class="sales-item-price">140,000 đ</div>
+                                                </div>
+                                            </a>
+                                            <div class="sales__item-btn btn btn--second">Mua</div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="sales__item">
+                                            <a href="" class="sales__item-link">
+                                                <div class="sales__item-img-wrapper">
+                                                    <img src="./assets/img/1_T_GX34ajHqviNUs4O6j8gg.jpeg" alt="Ảnh sản phẩm" class="sales__item-img">
+                                                </div>
+                                                <div class="sales__item-info">
+                                                    <div class="sales__item-name">Bơ sáp 034 Lâm Đồng hướng hữu cơ 1kg</div>
+                                                    <div class="sales-item-price">135,000 đ</div>
+                                                </div>
+                                            </a>
+                                            <div class="sales__item-btn btn btn--second">Mua</div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="sales__item">
+                                            <a href="" class="sales__item-link">
+                                                <div class="sales__item-img-wrapper">
+                                                    <img src="./assets/img/ca_trac_vang_bien_1_master.jpg" alt="Ảnh sản phẩm" class="sales__item-img">
+                                                </div>
+                                                <div class="sales__item-info">
+                                                    <div class="sales__item-name">Cá trác vàng biển ích Hữu 400g</div>
+                                                    <div class="sales-item-price">71,500 đ</div>
+                                                </div>
+                                            </a>
+                                            <div class="sales__item-btn btn btn--second">Mua</div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <div class="sales__item">
+                                            <a href="" class="sales__item-link">
+                                                <div class="sales__item-img-wrapper">
+                                                    <img src="./assets/img/upload_1c4b595369214f1da01e1ee7dfe9b948_master.jpg" alt="Ảnh sản phẩm" class="sales__item-img">  
+                                                </div>
+                                                <div class="sales__item-info">
+                                                    <div class="sales__item-name">Cam xoàn hướng hữu cơ 1kg</div>
+                                                    <div class="sales-item-price">65,000 đ</div>
+                                                </div>
+                                            </a>
+                                            <div class="sales__item-btn btn btn--second">Mua</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Sales -->
+
+            <!-- Content -->
+            <div class="grid wide content">
+                <!-- <div class="row">
+                    
+                </div> -->
+                <div class="row content__layout">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="content__item">
+                            <img src="./assets/img/member2-150x150.png" alt="" class="content__item-img">
+                            <div class="content__item-lead">” Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn “</div>
+                            <div class="content__item-member">
+                                Chị Hoa
+                                <span class="content__item-member-social">/ Facebook</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <div class="content__brand-item">
+                            <img src="./assets/img/brand1.png" alt="Ảnh Brand" class="content__brand-img">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <div class="content__brand-item">
+                            <img src="./assets/img/brand2.png" alt="Ảnh Brand" class="content__brand-img">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <div class="content__brand-item">
+                            <img src="./assets/img/brand3.png" alt="Ảnh Brand" class="content__brand-img">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <div class="content__brand-item">
+                            <img src="./assets/img/brand4.png" alt="Ảnh Brand" class="content__brand-img">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-3 c-6">
+                        <div class="content__brand-item">
+                            <img src="./assets/img/brand5.png" alt="Ảnh Brand" class="content__brand-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Content -->
+
+            <!-- News -->
+            <div class="grid wide news">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="news__title">Tin Tức</div>  
+                    </div>
+
+                    <!-- News item -->
+                    <div class="col l-4 m-6 c-12">
+                        <div class="news__item">
+                            <div class="news__item-link">
+                                <img src="/assets/img/nam_van_chi_2.jpg" alt="Ảnh tin tức" class="news__item-img">
+                                <div class="news__item-info">
+                                    <div class="news__item-name">Nấm vân chi có tác dụng gì?</div>
+                                    <div class="news__item-date">16 Tháng Năm,2019</div>
+                                    <div class="news__item-divine"></div>
+                                    <div class="news__item-desc">Cách đây hơn 2000 năm, nấm vân chi rừng đã được biết đến và sử dụng tại Trung Quốc. Giờ đây, khi khoa học phát triển thì công dụng của nấm vân chi rừng ngày càng được khẳng định và nhiều người biết tới.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="news__item">
+                            <div class="news__item-link">
+                                <img src="/assets/img/cha-com-an-voi-gi-ngon-768x768.jpg" alt="Ảnh tin tức" class="news__item-img">
+                                <div class="news__item-info">
+                                    <div class="news__item-name">Chả gốm ăn với gì ngon?</div>
+                                    <div class="news__item-date">16 Tháng Năm,2019</div>
+                                    <div class="news__item-divine"></div>
+                                    <div class="news__item-desc">Bánh giò là một loại bánh được làm từ bột gạo tẻ, nhân bánh làm từ thịt nạc heo cùng mộc nhĩ. Loại bánh này rất phổ biến tại các tỉnh miền Bắc. Bánh thường ăn kèm với chả quế, thịt xiên, nem chua, xúc xích hay chả cốm. Vỏ bánh mềm, dẻo, có lớp nhân beo béo, nêm nếm vừa vị, ăn kèm dưa leo, chả quế và chả cốm thì không gì ngon bằng.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="news__item">
+                            <div class="news__item-link">
+                                <img src="/assets/img/com-tuoi-moc-an-768x768.jpg" alt="Ảnh tin tức" class="news__item-img">
+                                <div class="news__item-info">
+                                    <div class="news__item-name">Gốm tươi làm món gì ngon?</div>
+                                    <div class="news__item-date">16 Tháng Năm,2019</div>
+                                    <div class="news__item-divine"></div>
+                                    <div class="news__item-desc">Dùng cốm tươi làm món gì, cốm tươi có thể chế biến thành nhiều món ăn khác nhau như chả cốm, chè cốm, xôi cốm, bánh cốm, kem cốm… Với mỗi món ăn, hạt cốm lại cho một hương vị độc đáo riêng. Tùy vào tay nghề người làm, hạt cốm cũng cho những vị khác nhau. Hạt lúa phải chín đủ độ, bởi nếu nếp non quá hạt cốm sẽ bị vỡ, không đủ độ ngọt. Nếu hạt nếp già quá, cốm sẽ bị khô, cứng và không dẻo.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End news -->
+
+            <!-- Subscribe -->
+            <div class="grid subscribe">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="subscribe__content">
+                            <div class="subscribe__title">Đăng ký ngay</div>
+                            <div class="subscribe__desc">Giảm giá 30% đơn hàng</div>
+                            <div class="subscribe__form">
+                                <input type="email" class="subscribe__input" placeholder="Email của bạn">
+                                <div class="subscribe__btn btn">Đăng ký</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End subscribe -->
+
+        
+    </container>
+    <!-- End container -->
+    
+        
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="grid wide footer__content">
+            <div class="row">
+                <div class="col l-3 m-6 c-6">
+                    <div class="footer__item">
+                        <div class="footer__logo">
+                            <img src="/assets/img/mona-white.png" alt="Ảnh logo" class="footer__logo-img">
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <div class="footer__list-item-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <div class="footer__list-item-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    076 922 0162
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <div class="footer__list-item-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        
+                                    </div>
+                                    demonhunterg@gmail.com
+                                </a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">
+                                    <div class="footer__list-item-icon">
+                                        <i class="fa-brands fa-skype"></i>
+                                    </div>
+                                    demonhunterp
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <div class="footer__item">
+                        <div class="footer__heading">Sản phẩm</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Rau củ</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Hải sản</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trái cây</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Đồ uống</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Thịt trứng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="col l-2 m-3 c-6">
+                    <div class="footer__item">
+                        <div class="footer__heading">Danh mục</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trang chủ</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Cửa hàng</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Kiến thức</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l-2 m-6 c-6">
+                    <div class="footer__item">
+                        <div class="footer__heading">Dịch vụ</div>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Rau củ</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Hải sản</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Trái cây</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Đồ uống</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a href="" class="footer__list-item-link">Thịt trứng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div class="col l-3 m-6 c-12">
+                    <div class="footer__item">
+                        <div class="footer__heading">Đăng ký</div>
+                        <div class="footer__decs">Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</div>
+                        <div class="footer__subscribe">
+                            <input type="text" name="" id="" class="footer__subscribe-input" placeholder="Email ...">
+                            <div class="footer__subscribe-btn">
+                                <div class="footer__subscribe-btn-icon">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__social">
+                            <div class="footer__social-item">
+                                <a href="" class="footer__social-link">
+                                    <div class="footer__social-icon">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__social-item">
+                                <a href="" class="footer__social-link">
+                                    <div class="footer__social-icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__social-item">
+                                <a href="" class="footer__social-link">
+                                    <div class="footer__social-icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="footer__social-item">
+                                <a href="" class="footer__social-link">
+                                    <div class="footer__social-icon">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__text">© Bản quyền thuộc về . Thiết kế website</div>
+    </footer>
+    <!-- End Footer -->
+
+
+</body>
+</html>

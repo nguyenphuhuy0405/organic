@@ -1,0 +1,118 @@
+:root{
+    --primary-color: #8cc63f;
+    --second-color:#1e73be;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --title-color: #1c1c1c;
+    --border-color: #dbdbdb;
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --glass-color: rgba(255,255,255,0.85);
+    --box-shadow: 3px 10px rgb(0,0,0,0.2)
+}
+*{
+    /* Kế thừa thuộc tính box-sizing */
+    box-sizing: inherit;
+}
+html{
+    /* font-size = 62,5% =>> 1 rem = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* Phông chữ mặc định */
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 1.6rem;
+}
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+
+}
+/* Modal*/
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+}
+.modal__ovelay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__body{
+    --growth-from:0.7;
+    --growth-to:1;
+    margin: auto;
+    position: relative;
+    animation: growth linear 0.1s;
+}
+.modal__inner{
+
+}
+/* Button style */
+.btn{
+    min-width: 80px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    padding: 15px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+    background-color: var(--white-color);
+}
+.btn.btn--normal:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.btn.btn--size-s{
+    height: 32px;
+    font-size: 1.2rem;
+    padding: 0 8px; 
+}
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.btn.btn--second{
+    color: var(--white-color);
+    background-color: var(--second-color);
+    cursor: pointer;
+}
+.btn.btn-disable{
+    cursor: default;
+    background-color: #666;
+    color: #ccc;
+    width: 150px;
+}
